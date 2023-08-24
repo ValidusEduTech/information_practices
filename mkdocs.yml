@@ -1,16 +1,37 @@
 site_name: ValidusEduTech
 
 theme:
-  name: mkdocs
-  highlightjs: true
-  hljs_languages:
-    - python
-  nav_style: dark
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
 
 nav:
   - Index: "index.md"
   - Introduction: "introduction.md"
   - Syllabus: "syllabus.md"
+
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal
+      accent: lime
 
 
 
